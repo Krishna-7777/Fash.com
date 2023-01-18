@@ -114,3 +114,36 @@ footer li{
     display: block;
     width: 30%;
 }
+
+#popup{
+    display: none;
+    width: 15%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    position: fixed;
+    top: 11.1%;
+    right: 13%;
+    z-index: 1;
+    background-color: white;
+    padding: 1%;
+}
+#popup ul,li{
+    list-style-type: none;
+    padding: 1%;
+    margin: 1%;
+}
+#popup li:nth-child(2):hover{
+    font-weight: initial;
+}
+#popup li:hover{
+    font-weight: 600;
+}
+#popup button{
+    padding: 5%;
+    font-size: large;
+    background-color: unset;
+    border: 2px solid rgb(200, 200, 200);
+    color: rgb(255, 115, 0);
+}
+#popup button:hover{
+    border-color: rgb(255, 115, 0);
+}
