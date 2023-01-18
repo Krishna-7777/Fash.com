@@ -1,0 +1,116 @@
+/* header styles */
+* img{
+    cursor: pointer;
+}
+*{
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding: 1%;
+}
+header>div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    cursor: pointer; 
+    padding: 1%;
+}
+header>div>div:hover{
+    font-weight: 600;
+}
+header input{
+    width: 60%;
+    font-size: large;
+    padding: 1%;
+}
+header img{
+    width: 7%
+}
+/* header styles */
+i{
+    color: rgb(255, 115, 0);
+}
+#Search{
+    background-color:unset;
+    border: 0px;
+    font-size: 105%;
+    position: relative;
+    right: 90px;
+}
+header{
+    position:fixed;
+    background-color: white;
+    width: 100%;
+}
+#top{
+   padding: 3.5%;
+}
+#deals{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+#deals img{
+    width: 100%;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.banner img{
+    width: 100%;
+}
+#bb{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+#bb img{
+    width: 100%;
+}
+#btob{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+}
+#btob img{
+    width: 100%;
+}
+#gb{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+#gb img{
+    width: 100%;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#main img{
+    width: 100%;
+}
+footer{
+    margin-top: 1%;
+    background-color: rgba(220, 220, 220, 0.199);
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+footer ul{
+    list-style-type: none;
+}
+footer li{
+    padding: 2.5%;
+}
+#store img{
+    width: 90%;
+}
+#q img{
+    margin: auto;
+    display: block;
+    width: 30%;
+}
