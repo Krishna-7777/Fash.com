@@ -14,7 +14,9 @@ userRouter.post('/register', (ask, give) => {
         if (hashed) {
             let user = new UserModel({ name, email, 'password': hashed });
             await user.save();
-            give.send({ "msg": "User have been registered" })
+            give.send({ "status":true,name })
+        }else{
+             give.send({ "status":false })
         }
     })
 });
@@ -26,9 +28,9 @@ userRouter.post('/login', async (ask, give) => {
     bcrypt.compare(password, hash, async (err, result) => {
         if (result) {
             let token=jwt.sign({"_id":user._id},process.env.secret);
-            give.send({ "msg": `Welcome ${user.name}`,"token":token,"name":user.name});
+            give.send({ "status":true,"token":token,"name":user.name});
         } else {
-            give.send({ "msg": "Wrong Credentials" })
+            give.send({ "status":false })
         }
     })
 });
