@@ -7,7 +7,7 @@ let products = document.getElementById("products");
     })
     data=await data.json();
     products.innerHTML =data.reduce((acc,item)=>{
-        acc+=`<div>
+        acc+=`<div id=${item._id}>
         <img src=${item.image} alt="">
         <h3>  ${item.brand}</h3>
         <p id="name">  ${item.name}</p>
