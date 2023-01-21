@@ -6,7 +6,8 @@ const productRouter = express.Router();
 productRouter.use(express.json());
 
 productRouter.get('/',async (ask,give)=>{
-    let products=await ProductModel.find();
+    let page=ask.query.page;
+    let products=await ProductModel.find().limit(16).skip((page-1)*16);
     give.send(products);
 })
 

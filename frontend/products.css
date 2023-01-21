@@ -3,6 +3,7 @@
     margin-top: 0%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0%;
 }
 header{
     z-index: 1;
@@ -50,4 +51,22 @@ hr{
 }
 #name{
     color: rgb(149, 149, 149);
+}
+#last{
+    margin-bottom: 1%;
+}
+#pagination{
+    width: max-content;
+    margin: auto;
+    position: relative;
+    bottom: 50px;
+    left:190px;
+}
+#pagination button{
+    background-color: white;
+}
+#pagination button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
 }
