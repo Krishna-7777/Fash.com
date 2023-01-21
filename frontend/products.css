@@ -58,14 +58,14 @@ hr{
     width: max-content;
     margin: auto;
     position: relative;
-    bottom: 50px;
+    bottom: 55px;
     left:190px;
 }
 #pagination button{
     background-color: white;
+    font-size: 20px;
 }
 #pagination button:hover{
     background-color: rgb(0, 0, 0);
     color: white;
-    font-size: 20px;
 }
