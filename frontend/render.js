@@ -24,6 +24,7 @@ let products = document.getElementById("products");
 
 products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
+        event.target.innerText="Adding...";
         let res=await fetch(`https://jolly-ox-earmuffs.cyclic.app/cart/${event.target.id}`,{
             method:"POST",
             headers:{
@@ -31,9 +32,12 @@ products.addEventListener('click', async(event) => {
                 "Authorization":localStorage.getItem("token")
             }
         });
+        
         res=await res.json();
         if(res.msg=="Please Login to access"){
             alert(res.msg);
+        }else{
+            event.target.innerText="Added";
         }
     }})
 
