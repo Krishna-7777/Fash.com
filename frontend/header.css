@@ -14,6 +14,7 @@ i{
     font-size: 105%;
     position: relative;
     right: 90px;
+    cursor: pointer;
 }
 header{
     position:fixed;

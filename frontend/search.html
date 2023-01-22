@@ -12,9 +12,11 @@
 <link rel="stylesheet" href="./header.css">
 <link rel="stylesheet" href="./products.css">
 <link rel="stylesheet" href="./popup.css">
+<link rel="stylesheet" href="search.css">
 <header>
     <a href="./index.html"> <img src="./fash.png" alt="" srcset=""></a>
     <div>
+
         <div><a href="./products.html" style="color:unset;text-decoration:none"> MEN</a></div>
         <div>WOMEN</div>
         <div>KIDS</div>
@@ -22,7 +24,7 @@
     </div>
 
     <div>
-        <input type="text" placeholder="Search for products,brands and more">
+        <input id="sbox" type="text" placeholder="Search for products,brands and more">
         <button id="Search"><i class="fa-solid fa-search"></i></button>
     </div>
     <div>
@@ -67,23 +69,13 @@
 </header>
 <div id="top"></div>
 
-<body><hr>
+<body>
+    <h2 id="searchStatement">sdfghjkl</h2>
+    <hr>
     <div id="body">
         
         <div id="filterbar">
-            <ul>
-            <h3>Categories</h3><hr>
-                <li><input type="radio" name="b" id="headphones">
-                <label for="headphones">Headphones</label></li>
-                <li><input type="radio" name="b" id="shoes">
-                <label for="shoes">Shoes</label></li>
-                <li><input type="radio" name="b" id="kurtas">
-                <label for="kurtas">Kurtas</label></li>
-                <li> <input type="radio" name="b" id="speakers">
-                <label for="speakers">Speakers</label></li>
-                <li><input type="radio" name="b" id="t-shirt">
-                <label for="t-shirt">T-shirt</label></li>
-            </ul>
+            
             <ul>
                 <h3>Price</h3><hr>
                 <li><input type="radio" name="c" id="Low to High">
@@ -256,4 +248,5 @@
 
 </html>
 <script src="./popup.js"></script>
-<script src="./render.js"></script>
+<script src="./search.js"></script>
+<script src="./srchrouter.js"></script>
