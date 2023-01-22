@@ -5,7 +5,7 @@ form.addEventListener('submit',async(e)=>{
     let name=document.getElementById('name').value;
     let email=document.getElementById('email').value;
     let password=document.getElementById('password').value;
-    let res=await fetch("http://127.0.0.1:3000/user/register",{
+    let res=await fetch("https://jolly-ox-earmuffs.cyclic.app/user/register",{
         method:"POST",
         body:JSON.stringify({name,email,password}),
         headers:{

@@ -1,6 +1,6 @@
 let products = document.getElementById("products");
 (async()=>{
-    let data=await fetch("http://127.0.0.1:3000/products",{
+    let data=await fetch("https://jolly-ox-earmuffs.cyclic.app/products",{
         headers:{
             "Content-Type":"application/json"
         }
@@ -24,7 +24,7 @@ let products = document.getElementById("products");
 
 products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
-        let res=await fetch(`http://127.0.0.1:3000/cart/${event.target.id}`,{
+        let res=await fetch(`https://jolly-ox-earmuffs.cyclic.app/cart/${event.target.id}`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -41,7 +41,7 @@ products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
       let page=event.target.innerText;
       (async()=>{
-        let data=await fetch(`http://127.0.0.1:3000/products?page=${page}`,{
+        let data=await fetch(`https://jolly-ox-earmuffs.cyclic.app/products?page=${page}`,{
             headers:{
                 "Content-Type":"application/json"
             }
