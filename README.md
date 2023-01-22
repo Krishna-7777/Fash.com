@@ -1,5 +1,5 @@
 # ![alt text](frontend/fash.png)
-## [Fash.com](https://stirring-duckanoo-3af8c2.netlify.app/), This is the Clone of Myntra.com.
+## [Fash.com](https://fash-com.netlify.app/), This is the Clone of Myntra.com.
 
 ## Home
  ![alt text](screenshots/home.PNG)
