@@ -10,7 +10,7 @@ let products = document.getElementById("products");
     })
     data=await data.json();
     products.innerHTML =data.reduce((acc,item)=>{
-        acc+=`<div id=${item._id}>
+        acc+=`<div >
         <img src=${item.image} alt="">
         <h3>  ${item.brand}</h3>
         <p id="name">  ${item.name}</p>
@@ -19,6 +19,7 @@ let products = document.getElementById("products");
         <p> <strike>Rs.${item.mrp}</strike></p>
         <p id="discount">  ${item.discount}<p>
         </div>
+        <button id=${item._id}>Add to Cart</button>
     </div>`
     return acc
     },``)
@@ -37,7 +38,7 @@ let products = document.getElementById("products");
         if(data.length){
             products.innerHTML="";
         products.innerHTML =data.reduce((acc,item)=>{
-            acc+=`<div id=${item._id}>
+            acc+=`<div >
             <img src=${item.image} alt="">
             <h3>  ${item.brand}</h3>
             <p id="name">  ${item.name}</p>
@@ -46,6 +47,7 @@ let products = document.getElementById("products");
             <p> <strike>Rs.${item.mrp}</strike></p>
             <p id="discount">  ${item.discount}<p>
             </div>
+            <button id=${item._id}>Add to Cart</button>
         </div>`
         return acc
         },``)
@@ -56,3 +58,17 @@ let products = document.getElementById("products");
     })();
     }
   });
+  products.addEventListener('click', async(event) => {
+    if (event.target.nodeName === 'BUTTON') {
+        let res=await fetch(`http://127.0.0.1:3000/cart/${event.target.id}`,{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization":localStorage.getItem("token")
+            }
+        });
+        res=await res.json();
+        if(res.msg=="Please Login to access"){
+            alert(res.msg);
+        }
+    }})
