@@ -1,6 +1,6 @@
 
 (async()=>{
-    let data=await fetch("http://127.0.0.1:3000/cart",{
+    let data=await fetch("https://jolly-ox-earmuffs.cyclic.app/cart",{
         headers:{
             "Content-Type":"application/json",
             "Authorization":localStorage.getItem("token")

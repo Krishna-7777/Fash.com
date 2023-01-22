@@ -3,7 +3,7 @@ document.getElementById("searchStatement").innerText=`Search Results for ${searc
 
 let products = document.getElementById("products");
 (async()=>{
-    let data=await fetch(`http://127.0.0.1:3000/products/${search}`,{
+    let data=await fetch(`https://jolly-ox-earmuffs.cyclic.app/products/${search}`,{
         headers:{
             "Content-Type":"application/json"
         }
@@ -29,7 +29,7 @@ let products = document.getElementById("products");
     if (event.target.nodeName === 'BUTTON') {
       let page=event.target.innerText;
       (async()=>{
-        let data=await fetch(`http://127.0.0.1:3000/products/${search}?page=${page}`,{
+        let data=await fetch(`https://jolly-ox-earmuffs.cyclic.app/products/${search}?page=${page}`,{
             headers:{
                 "Content-Type":"application/json"
             }
@@ -60,7 +60,7 @@ let products = document.getElementById("products");
   });
   products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
-        let res=await fetch(`http://127.0.0.1:3000/cart/${event.target.id}`,{
+        let res=await fetch(`https://jolly-ox-earmuffs.cyclic.app/cart/${event.target.id}`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
