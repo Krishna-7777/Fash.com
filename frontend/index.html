@@ -9,20 +9,21 @@
     <script src="https://kit.fontawesome.com/5598f0038c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./fashico.png" type="image/x-icon">
 </head>
+<link rel="stylesheet" href="./header.css">
 <link rel="stylesheet" href="./index.css">
-
+<link rel="stylesheet" href="./popup.css">
 <header>
-    <img src="./fash.png" alt="" srcset="">
+        <a href="./index.html"> <img src="./fash.png" alt="" srcset=""></a>
     <div>
 
-        <div>MEN</div>
+        <div><a href="./products.html" style="color:unset;text-decoration:none"> MEN</a></div>
         <div>WOMEN</div>
         <div>KIDS</div>
         <div>HOME & LIVING</div>
     </div>
 
     <div>
-        <input type="text" placeholder="Search for products,brands and more">
+        <input id="sbox" type="text" placeholder="Search for products,brands and more">
         <button id="Search"><i class="fa-solid fa-search"></i></button>
     </div>
     <div>
@@ -36,14 +37,14 @@
         </div>
         <div>
             <i class="fa-solid fa-bag-shopping" class="logo"></i>
-            Bag
+            <a href="./cart.html" style="color:unset;text-decoration:none">Bag</a>
         </div>
     </div>
     <div id="popup">
         <ul>
                 <li><h3>WELCOME</h3></li>
-                <li>To access account and manage orders</li>
-                <li><button>Login/Register</button></li>
+                <li id="text">To access account and manage orders</li>
+                <li><a href="./login.html"><button id="login">Login/Register</button></a><button id="logout">Logout</button></li>
                 <li><hr></li>     
                 <li>Orders</li>
                 <li>Wishlist</li>
@@ -325,3 +326,4 @@
 </body>
 </html>
 <script src="./popup.js"></script>
+<script src="./srchrouter.js"></script>

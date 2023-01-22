@@ -1,0 +1,29 @@
+#heading{
+    margin: 1%;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#main>div{
+    width: 80%;
+    margin: 10%;
+    border-radius: 10px 10px 0px 0px;
+}
+#price{
+    display: flex;
+    gap: 5%;
+}
+#main img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#main>div:hover{box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+#discount{
+   color:  rgb(255, 115, 0)
+}
+#name{
+    color: rgb(149, 149, 149);
+}

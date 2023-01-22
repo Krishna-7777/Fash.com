@@ -4,6 +4,8 @@ const cors=require("cors");
 const { authenticate } = require("./middlewares/auth.middleware");
 const { connection } = require("./config/db");
 const { userRouter } = require("./routes/userRouter");
+const { productRouter } = require("./routes/productRouter");
+const { cartRouter } = require("./routes/cartRouter");
 require("dotenv").config();
 
 const app=express();
@@ -13,7 +15,9 @@ app.get('/',(ask,give)=>{
     give.send('Welcome to Fash.com Backend')
 })
 
-app.use('/user',userRouter)
+app.use('/user',userRouter);
+app.use('/products',productRouter )
+app.use('/cart',cartRouter)
 
 app.listen(process.env.port,()=>{
     try {
