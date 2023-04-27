@@ -1,6 +1,7 @@
 # ![alt text](frontend/fash.png)
-## [Fash.com](https://fash-com.netlify.app/), This is the Clone of Myntra.com.
-
+## [Fash.com](https://fash-com.netlify.app/), Clone of Myntra.com.
+### Myntra is India's biggest fashion e-commerce store that aims at providing a hassle free and enjoyable shopping experience to shoppers across the country.
+### The Project was buld in 4 days.
 ## Home
  ![alt text](screenshots/home.PNG)
 ## Login
