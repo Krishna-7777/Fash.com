@@ -1,6 +1,6 @@
 
 (async()=>{
-    let data=await fetch("https://jolly-ox-earmuffs.cyclic.app/cart",{
+    let data=await fetch("https://fash-com.onrender.com/cart",{
         headers:{
             "Content-Type":"application/json",
             "Authorization":localStorage.getItem("token")

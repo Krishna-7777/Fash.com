@@ -1,3 +1,14 @@
+fetch("https://fash-com.onrender.com/",{
+    headers:{
+        "Content-Type":"application/json",
+    }
+}).then((res)=>{
+    if(!res.ok){
+        window.alert("The server is spining up, please try again later. Usually it takes 50 seconds to spin up.");
+    }
+})
+
+
 let parent=document.getElementById('parent');
 let popup=document.getElementById('popup');
 parent.onmouseover=()=>{

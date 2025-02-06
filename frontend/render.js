@@ -25,7 +25,7 @@ let products = document.getElementById("products");
 products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
         event.target.innerText="Adding...";
-        let res=await fetch(`https://jolly-ox-earmuffs.cyclic.app/cart/${event.target.id}`,{
+        let res=await fetch(`https://fash-com.onrender.com/cart/${event.target.id}`,{
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
@@ -45,7 +45,7 @@ products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
       let page=event.target.innerText;
       (async()=>{
-        let data=await fetch(`https://fash-com.onrender.com/?page=${page}`,{
+        let data=await fetch(`https://fash-com.onrender.com/products?page=${page}`,{
             headers:{
                 "Content-Type":"application/json"
             }
