@@ -6,6 +6,8 @@ fetch("https://fash-com.onrender.com/",{
     if(!res.ok){
         window.alert("The server is spining up, please try again later. Usually it takes 50 seconds to spin up.");
     }
+}).catch((err)=>{
+    window.alert("The server is spining up, please try again later. Usually it takes 50 seconds to spin up.");
 })
 
 
