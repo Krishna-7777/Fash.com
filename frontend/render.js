@@ -1,6 +1,6 @@
 let products = document.getElementById("products");
 (async()=>{
-    let data=await fetch("https://jolly-ox-earmuffs.cyclic.app/products",{
+    let data=await fetch("https://fash-com.onrender.com/products",{
         headers:{
             "Content-Type":"application/json"
         }
@@ -45,7 +45,7 @@ products.addEventListener('click', async(event) => {
     if (event.target.nodeName === 'BUTTON') {
       let page=event.target.innerText;
       (async()=>{
-        let data=await fetch(`https://jolly-ox-earmuffs.cyclic.app/products?page=${page}`,{
+        let data=await fetch(`https://fash-com.onrender.com/?page=${page}`,{
             headers:{
                 "Content-Type":"application/json"
             }
